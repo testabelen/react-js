@@ -1,7 +1,10 @@
 const CartWidget = () => {
+    return (
     <>
-        <button><img src={`https://img.flaticon.com/icons/png/512/34/34627.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF`} alt= "Carrito de compras" /></button>
+        <a><img src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd8EjJXKps8MmF3YXTSA7ggLMHmUgmIT1piQ&usqp=CAU`} alt= "Carrito de compras" width="150px" /></a>
     </>
+    );
+    
 }
 
 export default CartWidget

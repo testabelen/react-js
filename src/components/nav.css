@@ -1,0 +1,27 @@
+/*Nav*/
+.nav__list{
+	word-spacing: 50px;
+	font-size: 25px;
+	letter-spacing: 2px;
+	padding: 15px;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
+    display: flex;
+
+}
+
+.nav__list ul li {
+	display: inline;
+	list-style: none;
+    font-weight:bolder;
+	text-decoration:none;
+	color: rgb(119, 118, 118);
+    margin: 0px 20px;
+}
+
+.saludo{
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(119, 118, 118);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
