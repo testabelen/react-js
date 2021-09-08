@@ -1,5 +1,5 @@
 import "./nav.css";
-import ItemCount from './components/ItemCount';
+import ItemCount from './ItemCount';
 
 const ItemListContainer = (props) =>{
     
