@@ -1,6 +1,6 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Greeting from './components/ItemListContainer';
+import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 
 
@@ -10,8 +10,7 @@ function App() {
   <>
 
   <NavBar cat={["Vinos", "Cervezas", "Espumantes", "Destilados", "Varieté"]}/>
-  <Greeting greeting={["Bienvenid@ a Cardeno Vinos"]}/>
-
+  <ItemListContainer greeting={["Bienvenid@ a Cardeno Vinos"]}/>
   </>
   );
 }
