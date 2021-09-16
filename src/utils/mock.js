@@ -7,8 +7,20 @@ const bebidas = [
     {id:6, marca: "Quilmes", tipo:"Lager", precio:120}
 ];
 
+
+
 export const bebidaCerveza = new Promise ((resolve, reject) => {
     setTimeout(() => {
         resolve(bebidas);
+    }, 2000)
+});
+
+//Detail//
+
+const bebida = {id:7, marca:"Imperial", tipo:"Roja", precio:230}
+
+export const bebidaCervezaImperial = new Promise ((resolve) => {
+    setTimeout(() => {
+        resolve(bebida);
     }, 2000)
 });
