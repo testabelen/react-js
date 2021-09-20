@@ -24,7 +24,7 @@ function App() {
 
       <Route path="/categoria/:idCategoria" component={ItemListContainer}/>  
 
-      <Route path="/detalle/:idBebidas" exact component= {ItemDetailContainer}/>
+      <Route path="/detalle/:id" exact component= {ItemDetailContainer}/>
       
       <Route path="/cart" exact component={Cart}/>
 

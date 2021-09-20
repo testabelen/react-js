@@ -1,5 +1,5 @@
 import "./nav.css";
-import ItemCount from './ItemCount';
+
 import { bebidaCerveza } from '../utils/mock';
 import ItemList from './ItemList';
 import { useState, useEffect } from "react";
@@ -31,16 +31,11 @@ const ItemListContainer = (props) =>{
 
     },[idCategoria]);
     
-    const onAdd = (cant)=>{
-        console.log(cant)
-    }
+    
     
     return (
         <>
         <b className="saludo">{props.greeting}</b>
-
-        <ItemCount stock ={10} initial = {1} onAdd={onAdd}/>
-
         {loading ? <h2>Espere un momento por favor!</h2> : <ItemList bebidas={bebidas}/>}
         </>
     );

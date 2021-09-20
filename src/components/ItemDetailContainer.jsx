@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
-import { bebidaCervezaImperial } from "../utils/mock";
+import { useParams } from "react-router";
+import { bebidaCerveza } from "../utils/mock";
 import ItemDetail from "./ItemDetail";
 
 
 const ItemDetailContainer = () =>{
     const [item, setItem] = useState ({})
+    const {id}=useParams()
 
     useEffect (() => {
-        bebidaCervezaImperial 
-        .then(result => setItem (result))
-    }, [])
+        bebidaCerveza
+        .then(result => setItem (result.find((i) => parseInt(id) ===i.id)))
+    }, [id])
 
 
     return(
