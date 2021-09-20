@@ -7,7 +7,6 @@ const ItemDetail = ({item}) => {
         <div className="card-footer">{item.precio} </div>
         </div>  
     )
-
 }
 
 export default ItemDetail

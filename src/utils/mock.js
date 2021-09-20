@@ -1,10 +1,10 @@
 const bebidas = [
-    {id:1, marca: "Andes", tipo:"Lager", precio:170},
-    {id:2, marca: "Andes", tipo: "Roja", precio:170},
-    {id:3, marca: "Patagonia", tipo:"IPA", precio:200},
-    {id:4, marca: "Patagonia", tipo:"APA", precio:220},
-    {id:5, marca: "Quilmes", tipo:"Negra", precio:250},
-    {id:6, marca: "Quilmes", tipo:"Lager", precio:120}
+    {id:1, categoria: "Cervezas", marca: "Andes", tipo:"Lager", precio:170},
+    {id:2, categoria: "Vinos", marca: "Santa Julia", tipo: "Blanco", precio:370},
+    {id:3, categoria: "Espumantes", marca: "Chandon", tipo:"Brut", precio:2000},
+    {id:4, categoria: "Destilados", marca: "Apostoles", tipo:"GIN", precio:3220},
+    {id:5, categoria: "Cerveza", marca: "Quilmes", tipo:"Negra", precio:250},
+    {id:6, categoria: "Vinos", marca: "Valmont", tipo:"Tinto", precio:700}
 ];
 
 
