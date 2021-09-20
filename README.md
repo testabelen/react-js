@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Proyecto Final para el curso de ReactJS de dictado por Coderhouse. Con está app podrás seleccionar ciertos productos, acceder al detalle de los mismos y agregar al carrito de compras. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
