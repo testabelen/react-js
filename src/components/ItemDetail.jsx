@@ -1,12 +1,17 @@
 import ItemCount from './ItemCount'; 
 import { Col, Row } from 'react-bootstrap';
+import {useState} from 'react';
 
 
-const onAdd = (cant)=>{
-    console.log(cant)
-}
+
 
 const ItemDetail = ({item}) => {
+    const [selectQ, setSelectQ]= useState (0)
+
+    const onAdd = (cant)=>{
+        console.log(cant)
+        setSelectQ(cant)
+    } 
     return(
         <>
         <Row>
@@ -20,6 +25,7 @@ const ItemDetail = ({item}) => {
         <div className="card-footer">{item.precio} </div>
         </div>  
         </Col>
+
         <div>
         <ItemCount stock ={10} initial = {1} onAdd={onAdd}/>
         </div>

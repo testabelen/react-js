@@ -1,5 +1,4 @@
 import "./nav.css";
-
 import { bebidaCerveza } from '../utils/mock';
 import ItemList from './ItemList';
 import { useState, useEffect } from "react";
