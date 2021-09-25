@@ -1,16 +1,19 @@
 import ItemCount from './ItemCount'; 
 import { Col, Row } from 'react-bootstrap';
 import {useState} from 'react';
+import { Link } from "react-router-dom";
 
 
 
 
 const ItemDetail = ({item}) => {
     const [selectQ, setSelectQ]= useState (0)
+    const [cambiarButton, setCambiarButton]=useState(true)
 
     const onAdd = (cant)=>{
         console.log(cant)
         setSelectQ(cant)
+        setCambiarButton(false)
     } 
     return(
         <>
@@ -26,10 +29,16 @@ const ItemDetail = ({item}) => {
         </div>  
         </Col>
 
-        <div>
-        <ItemCount stock ={10} initial = {1} onAdd={onAdd}/>
-        </div>
 
+        {cambiarButton ?
+            <ItemCount stock ={10} initial = {1} onAdd={onAdd}/>
+            :
+            <div>
+            <Link to="/"><button>Seguir Comprando</button> </Link>
+
+            <Link to="/cart"><button>Finalizar Compra</button> </Link>
+            </div>
+            }
         </Row>
         </>
     )
