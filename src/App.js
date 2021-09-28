@@ -4,13 +4,14 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 import Cart from "./components/Cart";
-
+import CartContextProvider from "./utils/context/cartContext";
 
 
 function App() {
   
   return (
-  <BrowserRouter>
+    <CartContextProvider>
+      <BrowserRouter>
     <>
 
       <NavBar cat={["Cervezas", "Vinos", "Espumantes", "Destilados"]}/>
@@ -31,7 +32,8 @@ function App() {
     </Switch>
 
     </>
-  </BrowserRouter>
+    </BrowserRouter>
+  </CartContextProvider>
   );
 }
 

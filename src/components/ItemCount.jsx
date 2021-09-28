@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import { Col, Row } from 'react-bootstrap';
+import { Col} from 'react-bootstrap';
 
 const ItemCount = ({stock, initial, onAdd}) => {
 

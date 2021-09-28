@@ -2,6 +2,7 @@ import ItemCount from './ItemCount';
 import { Col, Row } from 'react-bootstrap';
 import {useState} from 'react';
 import { Link } from "react-router-dom";
+import { useCartContext } from '../utils/context/cartContext';
 
 
 
@@ -10,11 +11,15 @@ const ItemDetail = ({item}) => {
     const [selectQ, setSelectQ]= useState (0)
     const [cambiarButton, setCambiarButton]=useState(true)
 
+    const {addToCart} = useCartContext()
+
     const onAdd = (cant)=>{
         console.log(cant)
         setSelectQ(cant)
         setCambiarButton(false)
+        addToCart({item: item, quantity: cant})
     } 
+
     return(
         <>
         <Row>
